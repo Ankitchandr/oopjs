@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+
+
+
+
+
+<body>
+
+    <script>
+        function ValidateEmail(inputText)
+        {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (inputText.value.match(mailformat)) {
+                document.form.text.focus();
+                return true;
+            }
+            else {
+                alert("You have entered an invalid email address!");
+                document.form1.text1.focus();
+                return false;
+            }
+        }
+    </script>
+    
+
+    <form name="form1"  action="#">
+        Email id: <input type="text" name="email"></input><br>
+        <input type="submit" name="submit" onclick="ValidateEmail(document.form1.email)"/>
+    </form>
+
+   
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <style>
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+   }
+  .button3 {
+            background-color:lightblue;
+            color: black;
+           }
+  .button3 {border-radius: 8px;}
+        
+  .button3:hover {
+                background-color:blue;
+                color: white;
+                 }
+
+        body {
+            background-color:white;
+            background-image: url(/Images/bank10.jpg);
+            background-repeat: no-repeat;
+            background-size: 1000px;
+            background-position-x: right;
+        }
+        img {
+            background-position-y:center;
+        }
+        h1 {
+            color:orangered;
+        }
+
+    </style>
+    
+    <img src="/Images/bank8.png"  height="45%" width="25%"></img><br>
+    <button   class="button button3" onclick="myFunction()">Log in</button>
+    <a href="SwitchToAnotherPage.html">Back</a>
+    <marquee direction="left">
+        <h1>
+            State Bank of India is provided Home Lone,Education Lone,Gold Lone at 6.5% Interest Rate.NOTE:-Adhar Card UID Link is required for Internet Banking
+        </h1>
+    </marquee>
+
+   
+    <div>
+       <marquee direction="down"  >
+            <img src="/Images/bank12.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank13.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank14.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank1.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank2.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank3.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank4.png" height="45%" width="25%"></img><br>
+            <img src="/Images/bank6.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank7.jpg" height="45%" width="25%"></img><br>
+            <img src="/Images/bank11.jpg" height="45%" width="25%"></img><br>
+        </marquee>
+    </div>
+<p id="demo"></p>
+
+<script>
+   function myFunction() {
+    var txt;
+    var person = prompt("Please enter your Username:", "Harry Potter");
+
+
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+
+           if(person == "Ankit")
+           {
+              var person1 = prompt("Please enter your password:", "Harry Potter");
+
+              if (person == "Ankit" && person1 == "125") {
+                //  txt = "Hello " + person + " chandra ! Thanks for Login..";
+                  alert("Hello " + person + " chandra ! Thanks for Login..");
+                  
+              }
+              else
+              {
+                  alert("Enter correct  Username and password..");
+              }
+           }
+           else {
+               alert("Enter correct  Username..");
+           }
+       }
+    document.getElementById("demo").innerHTML = txt;
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn-group .button {
+            background-color: #4CAF50; /* Green */
+            border: 1px solid green;
+            color: white;
+            padding: 15px 50px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            float: left;
+        }
+
+            .btn-group .button:not(:last-child) {
+                border-right: none; /* Prevent double borders */
+            }
+
+            .btn-group .button:hover {
+                background-color: #3e8e41;
+            }
+    </style>
+
+    <script type="text/javascript">
+       function NavigateToHome() {
+           location.href = "Login.html";
+       }
+    </script>
+</head>
+<body>
+    <div class="btn-group" >
+        <button class="button" id="btnSave"  onclick="NavigateToHome();">Log in</button>
+        <button class="button">Net Banking</button>
+        <button class="button">Link UID</button>
+        <button class="button">Create Account</button>
+        <button class="button">Apply</button>
+        <button class="button">Recharage</button>
+        <button class="button">Help</button>
+        <button class="button">About us</button>
+    </div>
+
+</body>
+</html>
