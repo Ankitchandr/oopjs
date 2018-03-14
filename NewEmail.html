@@ -1,0 +1,266 @@
+﻿
+
+
+<html>
+<body style="background-image:url(/Images/speedcam.gif)">
+    <p id="demo"></p>
+
+    <script>
+document.getElementById("demo").innerHTML = Date();
+    </script>
+    <style>
+    input[type="tel"] {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+    }
+    input[type="tel"]:focus {
+    border: 1px solid #000;
+    }
+
+    input[type="submit"] {
+    font-weight: bold;
+    padding: 4px 8px;
+    border:1px solid #000;
+    background: #3b5998;
+    color:#fff;
+    }
+
+    form {
+    width: 50%;
+    margin: 0 auto;
+    }
+
+    .p {
+    padding-top: 30px;
+    }
+
+        label {
+            color:yellow;
+        }
+        h2 {
+            color:orangered;
+        }
+         h6 {
+            color:orangered;
+        }
+          h3 {
+            color:orangered;
+        }
+   </style>
+
+
+
+
+<!--
+<form>
+    <h2>Form validation</h2>
+
+    <label for="phonenum">First Name (2-15 character):</label> &nbsp;&nbsp;
+    <label for="phonenum">Last Name (2-15 character):</label><br />
+    <input id="phonenum" type="tel" pattern="^\d{10}$" required>
+    <input id="phonenum" type="tel" pattern="^\d{10}$" required>
+    <input type="submit" value="Submit"><br><br>
+
+
+
+    
+    
+    <label for="phonenum">Email id</label><br />
+    <input id="phonenum" type="tel" pattern="^\d{10}$" required>
+    <input type="submit" value="Submit"><br><br>
+
+    <label for="phonenum">Password</label><br />
+    <input id="phonenum" type="password" pattern="^\d{10}$" required>
+    <input type="submit" value="Submit"><br><br>
+
+
+
+
+    <label for="phonenum">Phone Number (format: xxxxxxxxxxx):</label><br />
+    <input id="phonenum" type="tel" pattern="^\d{10}$" required>
+    <input type="submit" value="Submit"><br /><br />
+
+
+
+
+
+
+    <h3>
+        <label for="phonenum">Sex</label><br />
+        Mail<input type="radio" name="gender" value="male" checked>
+        Femail<input type="radio" name="gender" value="female">
+        Other<input type="radio" name="gender" value="other">
+    </h3><br />
+
+
+
+
+
+
+    <label for="phonenum">Birthday</label><br />
+    <select>
+        <option>DAY</option>
+        <option>SUN</option>
+        <option>MON</option>
+        <option>TUE</option>
+        <option>WED</option>
+        <option>THU</option>
+        <option>FRI</option>
+        <option>SAT</option>
+    </select>
+
+    <select>
+        <option>MONTH</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+    </select>
+    <select>
+        <option>YEAR</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+    </select>
+
+    <input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p class="p">Demo by Agbonghama Collins. <a href="http://www.sitepoint.com/client-side-form-validation-html5/">See article</a>.</p>
+</form>-->
+<form>
+    <h2>Form validation</h2>
+   
+    <label for="phonenum">First Name (2-15 character):</label> &nbsp;&nbsp;
+    <label for="phonenum">Last Name (2-15 character):</label><br />
+    <input id="phonenum" type="tel" pattern="^\w{2,15}$" required>
+    <input id="phonenum" type="tel" pattern="^\w{2,15}$" required>
+    <input type="submit" value="Submit"><br><br>
+
+</form>
+
+ <form>
+
+        <label for="phonenum">Email id</label><br />
+        <input id="phonenum" type="tel" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
+        <input type="submit" value="Submit"><br><br>
+ </form>
+
+
+
+<form>
+    <label for="phonenum">Phone Number (format: xxxxxxxxxxx):</label><br />
+    <input id="phonenum" type="tel" pattern="^\d{10}$" required>
+    <input type="submit" value="Submit"><br /><br />
+</form>
+
+ <form>
+        <label for="phonenum">Password</label><br />
+        <input id="phonenum" type="tel"  value="at least 8-10 character"      pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z@\d]{8,10}$" required >
+        <input type="submit" value="Submit"><br><br>
+  </form>
+
+
+
+
+    <form>
+        <h3>
+            <label for="phonenum">Sex</label><br />
+            Mail<input type="radio" name="gender" value="male" checked>
+            Femail<input type="radio" name="gender" value="female">
+            Other<input type="radio" name="gender" value="other">
+        </h3><br />
+    </form>
+
+
+
+    <form>
+        <label for="phonenum">Birthday</label><br />
+        <select>
+            <option>DAY</option>
+            <option>SUN</option>
+            <option>MON</option>
+            <option>TUE</option>
+            <option>WED</option>
+            <option>THU</option>
+            <option>FRI</option>
+            <option>SAT</option>
+        </select>
+
+        <select>
+            <option>MONTH</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+        <select>
+            <option>YEAR</option>
+            <option>1990</option>
+            <option>1991</option>
+            <option>1992</option>
+            <option>1993</option>
+            <option>1994</option>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+ </body>
+</html>
